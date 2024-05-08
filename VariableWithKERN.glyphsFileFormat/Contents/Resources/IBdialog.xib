@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="22689"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="VariableWithKERN">
+            <connections>
+                <outlet property="axisNameTextField" destination="Yyx-E5-TzJ" id="baX-Ql-8K1"/>
+                <outlet property="axisTagTextField" destination="6jx-mV-rdl" id="cKn-Mo-kMb"/>
+                <outlet property="dialog" destination="1" id="Ouh-Ly-d56"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView translatesAutoresizingMaskIntoConstraints="NO" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="353" height="111"/>
+            <subviews>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="SYp-cB-Rym">
+                    <rect key="frame" x="18" y="75" width="317" height="16"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Export Variable Font with automatic kern axis:" id="FFC-Uy-bKK">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="7NS-EZ-tz0">
+                    <rect key="frame" x="20" y="49" width="55" height="16"/>
+                    <textFieldCell key="cell" lineBreakMode="clipping" title="Axis Tag" id="cH2-qH-kKm">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Yyx-E5-TzJ">
+                    <rect key="frame" x="95" y="20" width="238" height="21"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" id="CvS-Hk-b6J">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                    <accessibility description="Name for the kern axis visible to the user"/>
+                    <connections>
+                        <action selector="setAxisName:" target="-2" id="7lH-KE-fik"/>
+                    </connections>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="LM9-wa-cwC">
+                    <rect key="frame" x="20" y="23" width="69" height="16"/>
+                    <textFieldCell key="cell" lineBreakMode="clipping" title="Axis Name" id="FZ1-UE-5Sy">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField verticalHuggingPriority="750" textCompletion="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6jx-mV-rdl">
+                    <rect key="frame" x="95" y="46" width="238" height="21"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" id="mne-6m-azw">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        <allowedInputSourceLocales>
+                            <string>NSAllRomanInputSourcesLocaleIdentifier</string>
+                        </allowedInputSourceLocales>
+                    </textFieldCell>
+                    <accessibility description="4-letter tag for the kern axis"/>
+                    <connections>
+                        <action selector="setAxisTag:" target="-2" id="2c7-Oj-oTW"/>
+                    </connections>
+                </textField>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Yyx-E5-TzJ" secondAttribute="bottom" constant="20" symbolic="YES" id="5eX-c3-C3S"/>
+                <constraint firstItem="LM9-wa-cwC" firstAttribute="baseline" secondItem="Yyx-E5-TzJ" secondAttribute="baseline" id="655-oM-WOO"/>
+                <constraint firstItem="6jx-mV-rdl" firstAttribute="trailing" secondItem="SYp-cB-Rym" secondAttribute="trailing" id="Exz-xj-lk7"/>
+                <constraint firstItem="7NS-EZ-tz0" firstAttribute="leading" secondItem="LM9-wa-cwC" secondAttribute="leading" id="Gyh-NS-lyp"/>
+                <constraint firstAttribute="trailing" secondItem="SYp-cB-Rym" secondAttribute="trailing" constant="20" symbolic="YES" id="Nny-uR-57z"/>
+                <constraint firstItem="6jx-mV-rdl" firstAttribute="top" secondItem="SYp-cB-Rym" secondAttribute="bottom" constant="8" symbolic="YES" id="Ots-7o-b6U"/>
+                <constraint firstItem="SYp-cB-Rym" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="20" symbolic="YES" id="Vc2-8T-9ek"/>
+                <constraint firstItem="6jx-mV-rdl" firstAttribute="leading" secondItem="Yyx-E5-TzJ" secondAttribute="leading" id="ZIk-aT-hJ0"/>
+                <constraint firstItem="6jx-mV-rdl" firstAttribute="trailing" secondItem="Yyx-E5-TzJ" secondAttribute="trailing" id="ctD-pM-txE"/>
+                <constraint firstItem="7NS-EZ-tz0" firstAttribute="baseline" secondItem="6jx-mV-rdl" secondAttribute="baseline" id="eEf-ha-e69"/>
+                <constraint firstItem="7NS-EZ-tz0" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="22" id="gGX-xD-pSy"/>
+                <constraint firstItem="Yyx-E5-TzJ" firstAttribute="leading" secondItem="LM9-wa-cwC" secondAttribute="trailing" constant="8" symbolic="YES" id="lla-kb-NZ0"/>
+                <constraint firstItem="SYp-cB-Rym" firstAttribute="top" secondItem="1" secondAttribute="top" constant="20" symbolic="YES" id="qdq-YZ-KML"/>
+            </constraints>
+            <point key="canvasLocation" x="-53.5" y="45.5"/>
+        </customView>
+        <userDefaultsController representsSharedInstance="YES" id="gEz-I4-vNS"/>
+    </objects>
+</document>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>en</string>
+	<key>CFBundleDocumentTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeExtensions</key>
+			<array>
+				<string>ExportIcon</string>
+			</array>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+		</dict>
+	</array>
+	<key>CFBundleExecutable</key>
+	<string>plugin</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.mekkablue.VariableWithKERN</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>VariableWithKERN</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0</string> <!-- 1.0 -->
+	<key>CFBundleVersion</key>
+	<string>1</string> <!-- 123 -->
+	<key>productReleaseNotes</key>
+	<string>Initial Commit</string>
+	<key>NSHumanReadableCopyright</key>
+	<string>Copyright, Rainer Scheichelbauer, 2024</string>
+	<key>NSPrincipalClass</key>
+	<string>VariableWithKERN</string>
+	<key>PyMainFileNames</key>
+	<array>
+		<string>plugin.py</string>
+	</array>
+</dict>
+</plist>
