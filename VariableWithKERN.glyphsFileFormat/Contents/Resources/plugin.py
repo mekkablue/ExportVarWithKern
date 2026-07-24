@@ -17,9 +17,8 @@
 
 from __future__ import division, print_function, unicode_literals
 import objc
-from GlyphsApp import *
-from GlyphsApp.plugins import *
-from copy import copy
+from GlyphsApp import Glyphs, GSAxis, INSTANCETYPEVARIABLE, GetFolder
+from GlyphsApp.plugins import FileFormatPlugin
 
 
 # Preference key names
